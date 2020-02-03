@@ -56,7 +56,7 @@ function engineerInput(){
       },
       {
         message: "Enter your Github Username:",
-        name: "github"
+        name: "extra"
       },
     ]);
   }
@@ -80,7 +80,7 @@ function engineerInput(){
       },
       {
         message: "What School do you go to?",
-        name: "school"
+        name: "extra"
       },
     ]);
   }
@@ -106,10 +106,9 @@ function getInput(){
           response.name,
           response.ID,
           response.email,
-          response.github
+          response.extra
             )
             fullTeam.push(engineer)
-           console.log(fullTeam)
            getInput()
         })
       break;  
@@ -122,7 +121,7 @@ function getInput(){
           response.name,
           response.ID,
           response.email,
-          response.school
+          response.extra
             )
             fullTeam.push(intern)
            console.log(fullTeam)
@@ -146,7 +145,7 @@ function getInput(){
 
 //function calls//
 
-  managerInput()
+managerInput()
   .then(function(response){
     manager = new Manager (
      response.name,
@@ -159,3 +158,4 @@ function getInput(){
     getInput()
   })
 
+module.export = fullTeam
