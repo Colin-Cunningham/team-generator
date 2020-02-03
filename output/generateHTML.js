@@ -19,7 +19,7 @@ module.exports = function generateHTML(data) {
         <h1>${data[0].title}</h1>
         <h3>${data[0].name}</h3>
         <h4 class="email"><a href="mailto: ${data[0].email}"> Email: ${ data[0].email}</a> </h4>
-        <p class="extra"> Office Number: ${data[0].office} </p>
+        <p class="extra"> Office Number: ${data[0].officeNumber} </p>
         <p class="id"> ID: ${data[0].id} </p>
     </card>
 
