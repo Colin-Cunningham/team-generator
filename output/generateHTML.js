@@ -85,11 +85,10 @@ module.exports = function generateHTML(data) {
 <style>
 
 body{
-    margin-right: 3%;
     background-image: url("pinboard.png");
     background-repeat: no-repeat;
     background-size: auto;
-    padding: 2rem;
+    padding: 5rem;
 }
 .hide {
     display: none;
@@ -97,16 +96,11 @@ body{
 }
 #card {
 
-margin: 25px;
 width: 250px;
 min-height:250px;
 max-height:250px;
 padding-top:35px;
-margin: 25px;
-width: 250px;
-min-height:250px;
-max-height:250px;
-padding-top:35px;
+
 background: #ffff88;
 border-bottom-right-radius: 60px 5px;
 box-shadow:2px 15px 5px rgba(0, 0, 0, 0.40);
@@ -117,24 +111,20 @@ text-align: center;
     font-family: 'Kalam', cursive;
 }
 #manager{
-    float:right;
-    margin: 0 auto;
+    
     text-align: center;
-    width: 33%;
-    height: 70%;
+    width: 400px;
+    min-height:350px;
+    max-height:350px;
     background-image: url("notebook.jpeg");
     background-size: cover;
 }
 
 #main {
-    width: 66%;
+    width: 100%;
   
 }
-header {
-    text-align: center;
-    width: fit-content;
-    margin: 0 auto;
-}
+
 h2{
     font-family: 'Kalam', cursive;
     text-decoration: underline;
